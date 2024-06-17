@@ -11,17 +11,18 @@ import indice from "./img/indice.png";
 import { useState } from "react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const [estado,nEstado] = useState( <TarjetaIniciarSesion />)
+
+
 
 function Elegir() {
+
+  const [estado,nEstado] = useState( <TarjetaIniciarSesion/>)
   return (
     <div>
-     
       <div className="cont-registrar">
         <p>¿No tienes una cuenta?</p>
         <span
-            onClick={() => {
-            nEstado(<TarjetaRegistro />) 
+            onClick={() => {nEstado(<TarjetaRegistro />) /*TarjetaIniciarSesion*/
             console.log("exito");
           }}
         >
