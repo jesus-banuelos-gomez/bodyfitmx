@@ -1,10 +1,39 @@
-
-
-
-@media screen and (max-width: 360px) {
-   
+@media screen and (max-width: 380px) {
+  .cont-phone {
+    display: none;
   }
-  
-  @media screen and (max-width: 450px) {
-    
+
+  h1 {
+    font-size: 25pt;
   }
+
+  .img-pesa-register {
+    height: 40px;
+  }
+
+  .cont-img-sesion {
+    width: 100%;
+  }
+
+  .cont-D-log {
+    width: 100%;
+  }
+
+  input {
+    width: 180px;
+    height: 30px;
+  }
+
+  button {
+    width: 180px;
+    height: 30px;
+  }
+
+  .img-descargas-google {
+    width: 100px;
+  }
+
+  footer {
+    font-size: 10pt;
+  }
+}

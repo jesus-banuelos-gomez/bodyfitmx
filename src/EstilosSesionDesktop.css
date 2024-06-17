@@ -39,6 +39,7 @@ h1 {
 }
 
 .img-pesa-register {
+  height: 50px;
 }
 
 .cont-img-sesion {
@@ -142,7 +143,6 @@ button {
 
 .img-descargas-google {
   width: 150px;
-
 }
 
 footer {

@@ -1,24 +1,15 @@
-
-
-
-
-@media screen and (max-height:750px){
-
-    
-  }
-  
-  @media screen and (min-width: 800px){
-  
-    
-  
-  
-  }
-  
-  @media screen and (min-width: 858px) {
+@media screen and (max-width: 768px) {
+  .cont-phone {
+    visibility: collapse;
+    display: none;
    
   }
-  
-  @media screen and (min-width: 1300px) {
-    
+
+  .cont-img-sesion {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
   }
-  
+}

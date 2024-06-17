@@ -8,12 +8,11 @@ export function TarjetaSuperior() {
     <div className="cont-sup">
       <div className="cont-sup-box">
         <h1>BodyFitmx</h1>
-        <img src={pesa} height="50px" className="img-pesa-register" />
+        <img src={pesa} className="img-pesa-register" />
       </div>
     </div>
   );
 }
-
 
 export function ImgPhone() {
   return (
