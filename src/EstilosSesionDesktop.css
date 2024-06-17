@@ -1,0 +1,157 @@
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  outline: 1px solid greenyellow;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/fondo.png");
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  border: 0px;
+}
+
+.cont-sup {
+  background: #eb5269;
+  display: block;
+  padding: 5px;
+}
+
+.cont-sup-box {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+h1 {
+  font-family: "Hanalei", cursive;
+  font-weight: lighter;
+  font-size: 45pt;
+  color: #000000;
+  margin-right: 10px;
+}
+
+.img-pesa-register {
+}
+
+.cont-img-sesion {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cont-phone {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.cont-D-log {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cont-log {
+  width: 90%;
+  height: 350px;
+  border-radius: 30px;
+  margin: 40px;
+  padding: 20px;
+  box-shadow: 20px 20px 20px rgba(58, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.744);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-log h2 {
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Signika Negative", sans-serif;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+button {
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.cont-log span {
+  font-size: 20px;
+  font-family: "Signika Negative", sans-serif;
+  color: rgb(250, 250, 250);
+  margin-top: 20px;
+}
+
+.cont-registrar {
+  position: static;
+  width: 400px;
+  top: 670px;
+  left: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.cont-registrar p {
+  font-size: 20px;
+  font-family: "Signika Negative", sans-serif;
+  margin: 10px;
+}
+
+.cont-registrar span {
+  font-size: 10pt;
+  font-family: "Signika Negative", sans-serif;
+  color: rgb(84, 84, 252);
+  margin: 15px;
+}
+
+.cont-descargas {
+  position: relative;
+  width: fit-content;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10px;
+}
+
+.img-descargas-google {
+  width: 150px;
+
+}
+
+footer {
+  background: #eb5269;
+  width: 100%;
+  position: relative;
+  top: 97.5%;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-family: "Signika Negative", sans-serif;
+}

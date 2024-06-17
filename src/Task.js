@@ -1,22 +1,24 @@
-import "./estilosSesion.css";
+import "./EstilosSesionDesktop.css";
 import pesa from "./img/peso.png";
 import phone from "./img/phone.png";
-
 
 export function TarjetaSuperior() {
   return (
     /*Esta seccion retorna la parte superior de la pagina*/
     <div className="cont-sup">
-      <h1>BodyFitmx</h1>
-      <img src={pesa} height="50px" className="img-register" />
+      <div className="cont-sup-box">
+        <h1>BodyFitmx</h1>
+        <img src={pesa} height="50px" className="img-pesa-register" />
+      </div>
     </div>
   );
 }
 
+
 export function ImgPhone() {
   return (
     <div className="cont-phone">
-      <img src={phone} width="500px" />
+      <img src={phone} width="450px" />
     </div>
   );
 }
@@ -67,5 +69,3 @@ export function TarjetaRegistro() {
     </div>
   );
 }
-
-

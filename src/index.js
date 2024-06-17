@@ -6,29 +6,19 @@ import {
   TarjetaIniciarSesion,
   TarjetaRegistro,
 } from "./Task";
-import "./estilosSesion.css";
+
+import "./EstilosSesionTablet.css";
+import "./EstilosSesionMobile.css";
+import "./EstilosSesionDesktop.css";
 import indice from "./img/indice.png";
-import { useState } from "react";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
-
 function Elegir() {
-
-  const [estado,nEstado] = useState( <TarjetaIniciarSesion/>)
   return (
-    <div>
-      <div className="cont-registrar">
-        <p>¿No tienes una cuenta?</p>
-        <span
-            onClick={() => {nEstado(<TarjetaRegistro />) /*TarjetaIniciarSesion*/
-            console.log("exito");
-          }}
-        >
-          Registrate
-        </span>
-      </div>
+    <div className="cont-registrar">
+      <TarjetaIniciarSesion />
     </div>
   );
 }
@@ -36,12 +26,14 @@ function Elegir() {
 root.render(
   <>
     <TarjetaSuperior />
-    <ImgPhone />
-    <Elegir />
+    <div className="cont-img-sesion">
+      <ImgPhone />
+      <Elegir />
+    </div>
 
     <div className="cont-descargas">
-      <img src={indice} width="150px" />
+      <img src={indice} className="img-descargas-google" />
     </div>
-    <footer>Todos los derechos son propiedad de BodyFit.com</footer>
+    <footer>Todos los derechos son propiedad de Bodyfitmx.com</footer>
   </>
 );
