@@ -1,0 +1,25 @@
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    outline: 1px solid greenyellow;
+    box-sizing: border-box;  
+  }
+
+  .boxRegUsuarios{
+    background-color:rgb(232, 209, 178);
+    width: 20%;
+    height: max-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    
+  }
+  .Style-RegUsu{
+    width:90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }

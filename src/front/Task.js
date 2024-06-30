@@ -1,6 +1,11 @@
-import "./EstilosSesionDesktop.css";
-import pesa from "./img/peso.png";
-import phone from "./img/phone.png";
+import React from "react";
+import pesa from "../img/peso.png";
+import phone from "../img/phone.png";
+import "../estilosCss/InicioSesion/EstilosSesionDesktop.css";
+import "../estilosCss/InicioSesion/EstilosSesionMobile.css";
+import "../estilosCss/InicioSesion/EstilosSesionTablet.css";
+
+import { useState, useEffect } from "react";
 
 export function TarjetaSuperior() {
   return (
@@ -18,6 +23,29 @@ export function ImgPhone() {
   return (
     <div className="cont-phone">
       <img src={phone} width="450px" />
+    </div>
+  );
+}
+
+export function SesionLogin() {
+  const [state, setState] = useState(true);
+  const [namebtn, setNamebtn] = useState();
+
+  useEffect(() => {
+    state ? setNamebtn("Registro") : setNamebtn("Login");
+  });
+
+  return (
+    <div className="cont-registrar">
+      <button
+        className="SelectRegSesion"
+        onClick={() => {
+          state ? setState(false) : setState(true);
+        }}
+      >
+        {namebtn}
+      </button>
+      {state ? <TarjetaIniciarSesion /> : <TarjetaRegistro />}
     </div>
   );
 }
@@ -62,7 +90,15 @@ export function TarjetaRegistro() {
           placeholder="Confirmar Contraseña"
           required
         />
+        <br></br>
+       
+        <select name="cars" id="cars" multiple>
+          <option value="Cliente">Cliente</option>
+          <option value="Gym">Gym</option>
+        </select>
+
         <button id="btn-Login">Registrase</button>
+
         <span>¿Ya tienes una cuenta?</span>
       </div>
     </div>
